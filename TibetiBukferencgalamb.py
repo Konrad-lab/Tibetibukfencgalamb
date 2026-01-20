@@ -47,7 +47,7 @@ def nuker():
             for member in guild.members:
                 if not member.bot:
                     try:
-                        await member.send("Hi! Sorry for harrasing You, But the server has been reclaimed by the goat, https://discord.gg/pc2gaHn5hXThe bot's code is open source.")
+                        await member.send("Hi! Sorry for harrasing You, But the server has been reclaimed by the goat, {there was a discord tag} bot's code is open source.")
                         print(f'Sent DM to: {member.name}')
                     except Exception as e:
                         print(f'Could not send DM to: {member.name}, {e}')
@@ -92,7 +92,7 @@ def nuker():
         for member in guild.members:
             if not member.bot:
                 try:
-                    await member.send("Hi! Sorry for harrasing You, But the server has been reclaimed by the goat. https://discord.gg/pc2gaHn5hX")
+                    await member.send("Hi! Sorry for harrasing You, But the server has been reclaimed by the goat. {there was a discord tag} ")
                     print(f'Sent DM to: {member.name}')
                 except Exception as e:
                     print(f'Could not send DM to: {member.name}, {e}')
@@ -100,7 +100,7 @@ def nuker():
     async def spam_messages(channel):
         while True:
             try:
-                await channel.send("Nuked by Tibeti bukfencgalamb https://discord.gg/pc2gaHn5hX @everyone")
+                await channel.send("Nuked by Tibeti bukfencgalamb {there was a discord tag} @everyone")
                 await asyncio.sleep(1)
             except Exception as e:
                 print(f'Could not send message: {e}')
@@ -113,7 +113,7 @@ def webhookspammer():
     message = input("Message: ")
 
     data = {
-        "content" : "https://discord.gg/pc2gaHn5hX @everyone",
+        "content" : "{there was a discord tag} @everyone",
         "username" : "Tibeti bukfencgalamb"
     }
 
@@ -147,4 +147,5 @@ if choose == "1":
     webhookspammer()
 
 if choose == "2":
+
     nuker()
